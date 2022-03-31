@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1.2fr 0.5fr;
+    grid-template-areas:  
+    "nav nav nav nav"
+    "main main Sidebar Content1"
+    "Content2 Content3 Content3 Content1"
+    "footer footer footer footer";
+    grid-gap: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+nav {
+    background-color: blueviolet;
+    grid-area: nav;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+main {
+    background-color:midnightblue;
+    grid-area: main;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#Sidebar {
+    background-color: hotpink;
+    grid-area: Sidebar;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#Content1 {
+    background-color: aqua;
+    grid-area: Content1;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#Content2 {
+    background-color: forestgreen;
+    grid-area: Content2;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#Content3 {
+    background-color:darkgoldenrod;
+    grid-area: Content3;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+footer {
+    background-color: firebrick;
+    grid-area: footer;
+    border-radius: 5px;
+    padding-top: 5px;
+}
